@@ -19,14 +19,18 @@ src/
 │   ├── CTA.tsx
 │   └── Footer.tsx
 ├── data/
-|   ├── cases.ts
+│   ├── cases.ts
 │   ├── services.ts
 │   ├── ecosystem.ts
 │   └── partners.ts
+├── i18n.tsx
 ├── App.tsx
 ├── main.tsx
 └── styles.css
 ```
+
+Keep this structure diagram in sync with the project: whenever files or folders are
+added, moved, renamed, or removed, update this diagram in the same change.
 
 ## Run
 
@@ -37,4 +41,4 @@ npm run dev
 
 ## Note
 
-Email, case study và nội dung số liệu đang là placeholder để bạn thay bằng dữ liệu thật.
+Case study là nội dung mẫu để bạn thay bằng dữ liệu thật.
