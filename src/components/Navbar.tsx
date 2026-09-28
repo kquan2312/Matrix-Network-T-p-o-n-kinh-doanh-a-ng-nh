@@ -35,7 +35,7 @@ export default function Navbar() {
           >
             {language === "vi" ? "EN" : "VI"}
           </button>
-          <button className="menu-button" onClick={() => setOpen(!open)} aria-label={open ? "Close menu" : "Open menu"}>
+          <button className="menu-button" onClick={() => setOpen(!open)} aria-label={open ? t("nav.menuClose") : t("nav.menuOpen")}>
             {open ? <X /> : <Menu />}
           </button>
         </div>
