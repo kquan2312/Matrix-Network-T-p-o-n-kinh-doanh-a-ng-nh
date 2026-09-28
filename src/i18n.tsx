@@ -67,7 +67,19 @@ const translations: Record<Language, Record<string, string>> = {
     "form.messagePlaceholder": "Tell us a little about your needs...",
     "form.submit": "Continue by email",
     "form.emailNotice": "This will open your email app with your message prepared.",
-    "footer.tagline": "Business Service Ecosystem"
+    "footer.tagline": "Business Service Ecosystem",
+    "footer.ecosystem": "OUR ECOSYSTEM",
+    "footer.about": "ABOUT US",
+    "footer.follow": "FOLLOW US",
+    "footer.holding": "Matrix Holding",
+    "footer.network": "Matrix Network",
+    "footer.connect": "Matrix Connect",
+    "footer.ventures": "Matrix Ventures",
+    "footer.introduction": "Introduction",
+    "footer.guide": "User guide",
+    "footer.privacy": "Privacy policy",
+    "footer.terms": "Terms of use",
+    "footer.copyright": "All rights reserved."
   },
   vi: {
     "nav.ecosystem": "Hệ sinh thái",
@@ -133,7 +145,19 @@ const translations: Record<Language, Record<string, string>> = {
     "form.messagePlaceholder": "Chia sẻ đôi chút về nhu cầu của bạn...",
     "form.submit": "Gửi qua email",
     "form.emailNotice": "Ứng dụng email sẽ mở cùng nội dung liên hệ đã chuẩn bị sẵn.",
-    "footer.tagline": "Hệ sinh thái dịch vụ doanh nghiệp"
+    "footer.tagline": "Hệ sinh thái dịch vụ doanh nghiệp",
+    "footer.ecosystem": "HỆ SINH THÁI",
+    "footer.about": "VỀ CHÚNG TÔI",
+    "footer.follow": "THEO DÕI CHÚNG TÔI",
+    "footer.holding": "Matrix Holding",
+    "footer.network": "Matrix Network",
+    "footer.connect": "Matrix Connect",
+    "footer.ventures": "Matrix Ventures",
+    "footer.introduction": "Giới thiệu",
+    "footer.guide": "Hướng dẫn sử dụng",
+    "footer.privacy": "Chính sách bảo mật",
+    "footer.terms": "Điều khoản sử dụng",
+    "footer.copyright": "Bảo lưu mọi quyền."
   }
 };
 
