@@ -5,6 +5,9 @@ Landing page **Matrix Network — Hệ sinh thái dịch vụ doanh nghiệp**.
 ## Structure
 
 ```text
+public/
+└── favicon.png
+
 src/
 ├── components/
 │   ├── Navbar.tsx

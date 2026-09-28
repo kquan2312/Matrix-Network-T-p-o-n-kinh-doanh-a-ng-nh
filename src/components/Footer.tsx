@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="footer-content">
         <div className="footer-column footer-company">
           <a className="footer-brand" href="#top" aria-label="Matrix Network">
-            <span className="brand-mark">M</span>
+            <img className="brand-logo" src="/favicon.png" alt="" />
             <span><strong>MATRIX</strong><small>NETWORK</small></span>
           </a>
           <address className="footer-contact">

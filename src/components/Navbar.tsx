@@ -16,7 +16,7 @@ export default function Navbar() {
     <>
       <header className="navbar">
         <a className="brand" href="#top">
-          <span className="brand-mark">M</span>
+          <img className="brand-logo" src="/favicon.png" alt="Matrix Holding" />
           <span><strong>MATRIX</strong><small>NETWORK</small></span>
         </a>
 

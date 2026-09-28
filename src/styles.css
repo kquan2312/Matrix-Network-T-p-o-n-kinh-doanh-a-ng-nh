@@ -76,21 +76,22 @@
 .case-placeholder span{color:#B3D0CD}
 .case-meta{color:#D5E1E0}
 .case-placeholder::before{border-color:rgba(117,210,197,.24)}
-.footer{background:#10283E}
+.footer{background:#1B3A52}
 .footer-brand .brand-mark{color:#10283E}
 .footer-top>p{color:#A8B9C2}
 .footer-contact{display:flex;flex-wrap:wrap;gap:16px 32px;padding:0 0 35px;font-style:normal;color:#A8B9C2;font-size:12px}
 .footer-contact a,.footer-contact span{display:inline-flex;align-items:center;gap:9px}
 .footer-contact svg{flex:0 0 auto;color:#75D2C5}
 .footer-contact a:hover{color:#75D2C5}
-.footer-bottom{border-top-color:#345064;color:#A8B9C2}
+.footer-bottom{border-top-color:#3B596E;color:#A8B9C2}
 .footer-bottom a:hover{color:#75D2C5}
 @media(max-width:600px){.footer-contact{flex-direction:column;gap:14px}}
 .footer{padding:64px max(6vw,calc((100vw - 1460px)/2)) 22px}
 .footer-content{display:grid;grid-template-columns:minmax(260px,1.7fr) repeat(3,minmax(140px,1fr));gap:40px 6vw;max-width:1460px;margin:0 auto;padding:0 0 58px}
 .footer-company{display:flex;flex-direction:column;gap:30px}
 .footer .footer-brand{align-self:flex-start;gap:10px}
-.footer .footer-brand .brand-mark{width:42px;height:42px;background:var(--paper);color:var(--ink);font-size:22px}
+.brand-logo{display:block;flex:0 0 auto;width:36px;height:38px;object-fit:contain}
+.footer .brand-logo{width:48px;height:50px}
 .footer .footer-brand strong{font-size:14px;letter-spacing:.12em}
 .footer .footer-brand small{font-size:8px}
 .footer-contact{display:grid;gap:12px;padding:0;font-size:13px}
