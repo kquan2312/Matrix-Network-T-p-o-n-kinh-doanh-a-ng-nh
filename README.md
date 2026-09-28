@@ -19,6 +19,7 @@ src/
 │   ├── CTA.tsx
 │   └── Footer.tsx
 ├── data/
+|   ├── cases.ts
 │   ├── services.ts
 │   ├── ecosystem.ts
 │   └── partners.ts

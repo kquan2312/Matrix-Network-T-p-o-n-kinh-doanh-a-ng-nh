@@ -40,6 +40,7 @@ const translations: Record<Language, Record<string, string>> = {
     "why.title": "A strong network<br /><span>creates greater value.</span>",
     "cases.eyebrow": "CASE STUDIES",
     "cases.title": "Challenges<br /><span>solved together.</span>",
+    "cases.itemLabel": "CASE",
     "case.label": "CASE 01 / DIGITAL TRANSFORMATION",
     "case.title": "From fragmented processes<br />to one unified system.",
     "cta.eyebrow": "START A CONNECTION",
@@ -79,7 +80,9 @@ const translations: Record<Language, Record<string, string>> = {
     "footer.guide": "User guide",
     "footer.privacy": "Privacy policy",
     "footer.terms": "Terms of use",
-    "footer.copyright": "All rights reserved."
+    "footer.copyright": "All rights reserved.",
+    "footer.address": "Bac Linh Dam Urban Area, Hoang Liet Ward, Hanoi",
+    "footer.facebook": "Facebook"
   },
   vi: {
     "nav.ecosystem": "Hệ sinh thái",
@@ -118,6 +121,7 @@ const translations: Record<Language, Record<string, string>> = {
     "why.title": "Một mạng lưới tốt<br /><span>tạo ra nhiều giá trị hơn.</span>",
     "cases.eyebrow": "DỰ ÁN TIÊU BIỂU",
     "cases.title": "Những bài toán<br /><span>được kết nối.</span>",
+    "cases.itemLabel": "DỰ ÁN",
     "case.label": "DỰ ÁN 01 / CHUYỂN ĐỔI SỐ",
     "case.title": "Từ quy trình rời rạc<br />đến một hệ thống thống nhất.",
     "cta.eyebrow": "BẮT ĐẦU KẾT NỐI",
@@ -157,7 +161,9 @@ const translations: Record<Language, Record<string, string>> = {
     "footer.guide": "Hướng dẫn sử dụng",
     "footer.privacy": "Chính sách bảo mật",
     "footer.terms": "Điều khoản sử dụng",
-    "footer.copyright": "Bảo lưu mọi quyền."
+    "footer.copyright": "Bảo lưu mọi quyền.",
+    "footer.address": "KĐT Bắc Linh Đàm, Phường Hoàng Liệt, Hà Nội",
+    "footer.facebook": "Facebook"
   }
 };
 

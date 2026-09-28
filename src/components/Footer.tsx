@@ -14,7 +14,7 @@ export default function Footer() {
           <address className="footer-contact">
             <a href="mailto:matrixholding.support@gmail.com"><Mail size={17} />matrixholding.support@gmail.com</a>
             <a href="tel:+84964243026"><Phone size={17} />(+84) 964 243 026</a>
-            <span><MapPin size={17} />KĐT Bắc Linh Đàm, Phường Hoàng Liệt, Hà Nội</span>
+            <span><MapPin size={17} />{t("footer.address")}</span>
           </address>
         </div>
 
@@ -36,7 +36,7 @@ export default function Footer() {
 
         <div className="footer-column footer-social">
           <h2>{t("footer.follow")}</h2>
-          <span className="footer-social-icon" aria-label="Facebook"><Facebook size={24} /></span>
+          <span className="footer-social-icon" aria-label={t("footer.facebook")}><Facebook size={24} /></span>
         </div>
       </div>
 
