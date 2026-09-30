@@ -12,6 +12,7 @@ export default function Hero() {
         <div className="hero-actions">
           <a className="button button-dark" href="#ecosystem">{t("hero.explore")} <ArrowUpRight size={17} /></a>
           <a className="text-link" href="#contact">{t("hero.connect")} <MoveUpRight size={16} /></a>
+          <a className="button button-dark" href="#network">{t("hero.network")} <ArrowUpRight size={17} /></a>
         </div>
       </div>
 

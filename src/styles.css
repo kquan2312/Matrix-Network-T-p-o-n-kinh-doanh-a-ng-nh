@@ -103,8 +103,28 @@ button {
 }
 
 .desktop-nav a {
+  position: relative;
   font-size: 13px;
-  color: #40413d
+  color: #40413d;
+  text-decoration: none;
+}
+
+.desktop-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.25s ease;
+}
+
+.desktop-nav a:hover::after,
+.desktop-nav a.active::after {
+  transform: scaleX(1);
 }
 
 .navbar-actions {
@@ -1198,7 +1218,28 @@ h2 span {
   }
 
   .desktop-nav a {
-    white-space: nowrap
+    position: relative;
+    font-size: 13px;
+    color: #40413d;
+    text-decoration: none;
+  }
+
+  .desktop-nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.25s ease;
+  }
+
+  .desktop-nav a:hover::after,
+  .desktop-nav a.active::after {
+    transform: scaleX(1);
   }
 
   .navbar-actions {

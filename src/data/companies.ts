@@ -6,7 +6,9 @@ export type CompanyCategory =
   | "legal"
   | "hr"
   | "marketing"
-  | "consulting";
+  | "consulting"
+  | "logistics"
+  | "real-estate";
 
 export type CompanyLocation = "hanoi" | "bac-ninh" | "hai-phong" | "hung-yen";
 
@@ -31,7 +33,9 @@ export const companyCategories: CompanyCategory[] = [
   "legal",
   "hr",
   "marketing",
-  "consulting"
+  "consulting",
+  "logistics",
+  "real-estate"
 ];
 
 export const companyLocations: CompanyLocation[] = [
@@ -43,119 +47,202 @@ export const companyLocations: CompanyLocation[] = [
 
 export const networkCompanies: NetworkCompany[] = [
   {
-    id: "sample-01",
-    name: { vi: "Doanh nghiệp mẫu 01", en: "Sample business 01" },
+    id: "nova-digital",
+    name: {
+      vi: "Công ty TNHH Nova Digital",
+      en: "Nova Digital Co., Ltd."
+    },
     category: "technology",
     location: "hanoi",
     description: {
-      vi: "Hồ sơ minh họa cho đơn vị cung cấp giải pháp phần mềm và tự động hóa.",
-      en: "A sample profile for a provider of software and automation solutions."
+      vi: "Đơn vị phát triển giải pháp phần mềm doanh nghiệp, tích hợp hệ thống và tự động hóa quy trình vận hành.",
+      en: "A technology company providing enterprise software, system integration, and business process automation solutions."
     },
     capabilities: {
-      vi: ["Phần mềm", "Tự động hóa", "Tích hợp hệ thống"],
-      en: ["Software", "Automation", "System integration"]
+      vi: ["Phát triển phần mềm", "Tích hợp hệ thống", "Tự động hóa"],
+      en: ["Software development", "System integration", "Automation"]
     },
     contact: {
-      phone: "0901234567",
-      email: "contact@techsample.vn",
-      website: "https://techsample.vn"
+      phone: "024 7308 1688",
+      email: "contact@novadigital.example",
+      website: "https://novadigital.example"
     },
-    imageUrl: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=400"
+    imageUrl:
+      "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=800"
   },
+
   {
-    id: "sample-02",
-    name: { vi: "Doanh nghiệp mẫu 02", en: "Sample business 02" },
+    id: "an-phat-finance",
+    name: {
+      vi: "Công ty TNHH An Phát Tài Chính",
+      en: "An Phat Financial Advisory Co., Ltd."
+    },
     category: "finance",
     location: "hanoi",
     description: {
-      vi: "Hồ sơ minh họa cho đơn vị hỗ trợ kế toán, thuế và quản trị tài chính.",
-      en: "A sample profile for a provider of accounting, tax, and financial management."
+      vi: "Cung cấp dịch vụ kế toán, tư vấn tài chính doanh nghiệp và hỗ trợ quản trị dòng tiền cho doanh nghiệp vừa và nhỏ.",
+      en: "Providing accounting, financial advisory, and cash-flow management services for small and medium-sized businesses."
     },
     capabilities: {
-      vi: ["Kế toán", "Thuế", "Tư vấn tài chính"],
-      en: ["Accounting", "Tax", "Financial advisory"]
+      vi: ["Kế toán doanh nghiệp", "Tư vấn tài chính", "Quản trị dòng tiền"],
+      en: ["Corporate accounting", "Financial advisory", "Cash-flow management"]
     },
     contact: {
-      phone: "0987654321",
-      email: "hello@financesample.vn"
+      phone: "024 3568 2299",
+      email: "contact@anphatfinance.example",
+      website: "https://anphatfinance.example"
     },
-    imageUrl: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=400"
+    imageUrl:
+      "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=80&w=800"
   },
+
   {
-    id: "sample-03",
-    name: { vi: "Doanh nghiệp mẫu 03", en: "Sample business 03" },
+    id: "thinh-phat-legal",
+    name: {
+      vi: "Công ty Luật Thịnh Phát",
+      en: "Thinh Phat Law Firm"
+    },
     category: "legal",
     location: "bac-ninh",
     description: {
-      vi: "Hồ sơ minh họa cho đơn vị tư vấn pháp lý và tuân thủ doanh nghiệp.",
-      en: "A sample profile for a business legal and compliance consultancy."
+      vi: "Đơn vị tư vấn pháp lý cho doanh nghiệp trong các lĩnh vực đầu tư, hợp đồng, lao động và tuân thủ.",
+      en: "A legal advisory firm supporting businesses in investment, contracts, employment, and compliance matters."
     },
     capabilities: {
-      vi: ["Tư vấn pháp lý", "Hợp đồng", "Tuân thủ"],
-      en: ["Legal advice", "Contracts", "Compliance"]
+      vi: ["Tư vấn doanh nghiệp", "Hợp đồng", "Pháp lý đầu tư", "Tuân thủ"],
+      en: ["Corporate advisory", "Contracts", "Investment law", "Compliance"]
     },
     contact: {
-      phone: "0912345678",
-      website: "https://legalsample.vn"
+      phone: "0222 389 6868",
+      email: "office@thinhphatlaw.example",
+      website: "https://thinhphatlaw.example"
     },
-    imageUrl: "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80&w=400"
+    imageUrl:
+      "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=800"
   },
+
   {
-    id: "sample-04",
-    name: { vi: "Doanh nghiệp mẫu 04", en: "Sample business 04" },
+    id: "north-star-marketing",
+    name: {
+      vi: "North Star Creative",
+      en: "North Star Creative"
+    },
     category: "marketing",
     location: "hai-phong",
     description: {
-      vi: "Hồ sơ minh họa cho đơn vị phát triển thương hiệu và tiếp thị số.",
-      en: "A sample profile for a branding and digital marketing provider."
+      vi: "Đối tác truyền thông và marketing hỗ trợ doanh nghiệp xây dựng thương hiệu, nội dung số và chiến dịch tiếp thị.",
+      en: "A marketing and communications partner helping businesses build brands, digital content, and marketing campaigns."
     },
     capabilities: {
-      vi: ["Thương hiệu", "Nội dung", "Tiếp thị số"],
-      en: ["Branding", "Content", "Digital marketing"]
+      vi: ["Chiến lược thương hiệu", "Digital Marketing", "Sản xuất nội dung"],
+      en: ["Brand strategy", "Digital marketing", "Content production"]
     },
     contact: {
-      email: "hi@marketingsample.vn",
-      website: "https://marketingsample.vn"
+      phone: "0225 388 6688",
+      email: "hello@northstar.example",
+      website: "https://northstar.example"
     },
-    imageUrl: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=400"
+    imageUrl:
+      "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=800"
   },
+
   {
-    id: "sample-05",
-    name: { vi: "Doanh nghiệp mẫu 05", en: "Sample business 05" },
+    id: "viet-hr-solutions",
+    name: {
+      vi: "Viet HR Solutions",
+      en: "Viet HR Solutions"
+    },
     category: "hr",
     location: "hung-yen",
     description: {
-      vi: "Hồ sơ minh họa cho đơn vị cung cấp giải pháp nhân sự và tuyển dụng.",
-      en: "A sample profile for a human resources and recruitment solutions provider."
+      vi: "Cung cấp giải pháp tuyển dụng, đào tạo và tư vấn quản trị nhân sự cho doanh nghiệp đang mở rộng đội ngũ.",
+      en: "Providing recruitment, training, and HR consulting solutions for growing businesses."
     },
     capabilities: {
-      vi: ["Tuyển dụng", "Đào tạo", "Quản trị nhân sự"],
-      en: ["Recruitment", "Training", "HR management"]
+      vi: ["Tuyển dụng", "Đào tạo nhân sự", "Tư vấn HR", "Xây dựng đội ngũ"],
+      en: ["Recruitment", "Training", "HR consulting", "Team building"]
     },
     contact: {
-      phone: "0934567890",
-      email: "hr@hrsample.vn"
+      phone: "0221 376 8288",
+      email: "hello@viethr.example",
+      website: "https://viethr.example"
     },
-    imageUrl: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=400"
+    imageUrl:
+      "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=80&w=800"
   },
+
   {
-    id: "sample-06",
-    name: { vi: "Doanh nghiệp mẫu 06", en: "Sample business 06" },
+    id: "eastbridge-consulting",
+    name: {
+      vi: "EastBridge Consulting",
+      en: "EastBridge Consulting"
+    },
     category: "consulting",
     location: "hanoi",
     description: {
-      vi: "Hồ sơ minh họa cho đơn vị tư vấn chiến lược và tối ưu vận hành.",
-      en: "A sample profile for a strategy and operations consultancy."
+      vi: "Đơn vị tư vấn chiến lược và vận hành, đồng hành cùng doanh nghiệp trong quá trình mở rộng thị trường và tối ưu hoạt động.",
+      en: "A strategy and operations consultancy supporting businesses with market expansion and operational improvement."
     },
     capabilities: {
-      vi: ["Chiến lược", "Vận hành", "Tăng trưởng"],
-      en: ["Strategy", "Operations", "Growth"]
+      vi: ["Tư vấn chiến lược", "Tối ưu vận hành", "Phát triển thị trường"],
+      en: ["Strategy consulting", "Operations improvement", "Market expansion"]
     },
     contact: {
-      phone: "0967890123",
-      email: "consulting@sample.vn",
-      website: "https://consulting.vn"
+      phone: "024 3998 6688",
+      email: "contact@eastbridge.example",
+      website: "https://eastbridge.example"
     },
-    imageUrl: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=400"
+    imageUrl:
+      "https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&q=80&w=800"
+  },
+
+  {
+    id: "minh-long-logistics",
+    name: {
+      vi: "Minh Long Logistics",
+      en: "Minh Long Logistics"
+    },
+    category: "logistics",
+    location: "hai-phong",
+    description: {
+      vi: "Cung cấp dịch vụ logistics, vận chuyển hàng hóa và hỗ trợ chuỗi cung ứng cho doanh nghiệp sản xuất và thương mại.",
+      en: "Providing logistics, freight transportation, and supply-chain support for manufacturing and trading businesses."
+    },
+    capabilities: {
+      vi: ["Vận tải hàng hóa", "Kho vận", "Chuỗi cung ứng"],
+      en: ["Freight transportation", "Warehousing", "Supply chain"]
+    },
+    contact: {
+      phone: "0225 377 5588",
+      email: "ops@minhlonglogistics.example",
+      website: "https://minhlonglogistics.example"
+    },
+    imageUrl:
+      "https://images.unsplash.com/photo-1586528116493-da8b2a8f6f4c?auto=format&fit=crop&q=80&w=800"
+  },
+
+  {
+    id: "greenfield-property",
+    name: {
+      vi: "Greenfield Property",
+      en: "Greenfield Property"
+    },
+    category: "real-estate",
+    location: "bac-ninh",
+    description: {
+      vi: "Đơn vị hoạt động trong lĩnh vực bất động sản thương mại và cung cấp giải pháp mặt bằng cho doanh nghiệp.",
+      en: "A commercial real estate company providing property and workspace solutions for businesses."
+    },
+    capabilities: {
+      vi: ["Bất động sản thương mại", "Mặt bằng doanh nghiệp", "Tư vấn đầu tư"],
+      en: ["Commercial real estate", "Business premises", "Investment advisory"]
+    },
+    contact: {
+      phone: "0222 376 5566",
+      email: "contact@greenfield.example",
+      website: "https://greenfield.example"
+    },
+    imageUrl:
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800"
   }
 ];
