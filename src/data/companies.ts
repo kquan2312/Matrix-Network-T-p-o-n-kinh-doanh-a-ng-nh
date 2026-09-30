@@ -17,6 +17,12 @@ export interface NetworkCompany {
   location: CompanyLocation;
   description: Record<Language, string>;
   capabilities: Record<Language, string[]>;
+  contact?: {
+    phone?: string;
+    email?: string;
+    website?: string;
+  };
+  imageUrl?: string;
 }
 
 export const companyCategories: CompanyCategory[] = [
@@ -48,7 +54,13 @@ export const networkCompanies: NetworkCompany[] = [
     capabilities: {
       vi: ["Phần mềm", "Tự động hóa", "Tích hợp hệ thống"],
       en: ["Software", "Automation", "System integration"]
-    }
+    },
+    contact: {
+      phone: "0901234567",
+      email: "contact@techsample.vn",
+      website: "https://techsample.vn"
+    },
+    imageUrl: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=400"
   },
   {
     id: "sample-02",
@@ -62,7 +74,12 @@ export const networkCompanies: NetworkCompany[] = [
     capabilities: {
       vi: ["Kế toán", "Thuế", "Tư vấn tài chính"],
       en: ["Accounting", "Tax", "Financial advisory"]
-    }
+    },
+    contact: {
+      phone: "0987654321",
+      email: "hello@financesample.vn"
+    },
+    imageUrl: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=400"
   },
   {
     id: "sample-03",
@@ -76,7 +93,12 @@ export const networkCompanies: NetworkCompany[] = [
     capabilities: {
       vi: ["Tư vấn pháp lý", "Hợp đồng", "Tuân thủ"],
       en: ["Legal advice", "Contracts", "Compliance"]
-    }
+    },
+    contact: {
+      phone: "0912345678",
+      website: "https://legalsample.vn"
+    },
+    imageUrl: "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80&w=400"
   },
   {
     id: "sample-04",
@@ -90,7 +112,12 @@ export const networkCompanies: NetworkCompany[] = [
     capabilities: {
       vi: ["Thương hiệu", "Nội dung", "Tiếp thị số"],
       en: ["Branding", "Content", "Digital marketing"]
-    }
+    },
+    contact: {
+      email: "hi@marketingsample.vn",
+      website: "https://marketingsample.vn"
+    },
+    imageUrl: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=400"
   },
   {
     id: "sample-05",
@@ -104,7 +131,12 @@ export const networkCompanies: NetworkCompany[] = [
     capabilities: {
       vi: ["Tuyển dụng", "Đào tạo", "Quản trị nhân sự"],
       en: ["Recruitment", "Training", "HR management"]
-    }
+    },
+    contact: {
+      phone: "0934567890",
+      email: "hr@hrsample.vn"
+    },
+    imageUrl: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=400"
   },
   {
     id: "sample-06",
@@ -118,6 +150,12 @@ export const networkCompanies: NetworkCompany[] = [
     capabilities: {
       vi: ["Chiến lược", "Vận hành", "Tăng trưởng"],
       en: ["Strategy", "Operations", "Growth"]
-    }
+    },
+    contact: {
+      phone: "0967890123",
+      email: "consulting@sample.vn",
+      website: "https://consulting.vn"
+    },
+    imageUrl: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=400"
   }
 ];

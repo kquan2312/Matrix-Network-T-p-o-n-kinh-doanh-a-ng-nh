@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { ArrowUpRight, MapPin, Search, X } from "lucide-react";
+import { ArrowUpRight, MapPin, Search, X, Phone, Mail, Globe } from "lucide-react";
 import {
   companyCategories,
   companyLocations,
@@ -136,6 +136,11 @@ export default function Network() {
           <div className="network-cards">
             {filteredCompanies.map(company => (
               <article className="network-card" key={company.id}>
+                {company.imageUrl && (
+                  <div className="network-card-image">
+                    <img src={company.imageUrl} alt={company.name[language]} loading="lazy" />
+                  </div>
+                )}
                 <div className="network-card-meta">
                   <span className="network-category">{t(`network.category.${company.category}`)}</span>
                   <span className="network-sample-badge">{t("network.sampleBadge")}</span>
@@ -151,10 +156,30 @@ export default function Network() {
                     <span key={capability}>{capability}</span>
                   ))}
                 </div>
-                <a className="network-contact" href={createContactLink(company.name[language])}>
-                  {t("network.contact")}
-                  <ArrowUpRight size={16} aria-hidden="true" />
-                </a>
+                
+                <div className="network-contacts">
+                  {company.contact?.phone && (
+                    <a className="contact-btn" href={`tel:${company.contact.phone}`} title="Gọi điện" aria-label="Gọi điện">
+                      <Phone size={16} />
+                    </a>
+                  )}
+                  {company.contact?.email && (
+                    <a className="contact-btn" href={`mailto:${company.contact.email}`} title="Gửi Email" aria-label="Gửi Email">
+                      <Mail size={16} />
+                    </a>
+                  )}
+                  {company.contact?.website && (
+                    <a className="contact-btn" href={company.contact.website} target="_blank" rel="noopener noreferrer" title="Website" aria-label="Website">
+                      <Globe size={16} />
+                    </a>
+                  )}
+                  {(!company.contact?.phone && !company.contact?.email && !company.contact?.website) && (
+                    <a className="contact-btn fallback" href={createContactLink(company.name[language])}>
+                      {t("network.contact")}
+                      <ArrowUpRight size={16} aria-hidden="true" />
+                    </a>
+                  )}
+                </div>
               </article>
             ))}
           </div>
